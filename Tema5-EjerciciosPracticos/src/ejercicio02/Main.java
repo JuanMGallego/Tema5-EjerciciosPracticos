@@ -9,7 +9,7 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int baraja[][] = new int[10][4];
+		int baraja[][] = new int[4][10];
 		
 		int player = 1;
 		int pointsJ1 = 0, pointsJ2 = 0;
