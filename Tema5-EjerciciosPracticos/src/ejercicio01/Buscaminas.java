@@ -23,7 +23,7 @@ public class Buscaminas {
 		
 	}
 	
-	static void setClues(String[] solList, String[] userList) {
+	static void setClues(String[] solList) {
 		
 		for (int i = 0 ; i < solList.length ; i++) {
 			

@@ -21,8 +21,9 @@ public class Main {
 		
 		Buscaminas.setMines(solList);
 		
-		Buscaminas.setClues(solList, userList);
+		Buscaminas.setClues(solList);
 		
+		//Bucle hasta mirar todos los huecos
 		while (moves < 14) {
 			
 			System.out.println(Arrays.toString(userList));
@@ -33,12 +34,14 @@ public class Main {
 			
 			System.out.println();
 			
+			//Vuelve a empezar si ya fue seleccionado anteriormente
 			if (userList[userSelect] == solList[userSelect]) {
 				
 				continue;
 				
 			} else {
 			
+				//Fuera de rango
 				if (userSelect < 0 || userSelect > 19) {
 					
 					System.out.println("ERROR: Ha introducido una posición incorrecta");
